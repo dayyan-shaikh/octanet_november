@@ -113,13 +113,22 @@ section{
     }
 
     .logo{
-      font-size: .5em;
+      font-size: .6em;
       display: grid;
     }
     .navbar a{
-      font-size: .6em;
+      font-size: .7em;
       display: inline;
       padding: 0;
+    }
+
+    .register a{
+      text-decoration: none;
+      color: white;
+      padding: 5px 5px;
+      font-size: 12px;
+      border-radius: 4px;
+      background: rgb(89, 89, 176);
     }
 
     .footer{
