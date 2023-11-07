@@ -1,0 +1,133 @@
+ body {
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.2)), url("img.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'DM Serif Display', serif;
+  }
+
+ 
+
+nav{
+  width: 100%;
+  height: 100px;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo{
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+}
+
+.navbar a{
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 23px;
+  position: relative;
+}
+
+.navbar a::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  border-bottom: 2px solid rgb(10, 10, 126);
+  transition: 0.4s linear;
+}
+
+.navbar a:hover:before{
+  width: 100%;
+}
+
+.register a{
+  text-decoration: none;
+  color: white;
+  padding: 8px 20px;
+  font-size: 20px;
+  border-radius: 4px;
+  background: rgb(89, 89, 176);
+  /* transition: 0.4s; */
+}
+
+.register a:hover{
+  background: transparent;
+  border: 2px solid rgb(89, 89, 176);
+}
+
+section{
+  max-width: 650px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  color: white;
+}
+
+.h-txt span{
+  letter-spacing: 5px;
+  font-size: 1.5rem;
+}
+
+.h-txt h1{
+  font-size: 3.5em;
+}
+  
+.h-txt a{
+  text-decoration: none;
+  color: white;
+  padding: 8px 20px;
+  font-size: 20px;
+  border-radius: 4px;
+  background: rgb(89, 89, 176);
+  transition: 0.4s;
+}
+
+
+.h-txt a:hover{
+  background: transparent;
+  border: 2px solid rgb(89, 89, 176);
+}
+
+.footer{
+  text-align: center;
+  margin-top: 37%;
+  font-size: 1.4rem;
+  color: white;
+}
+
+@media screen and (max-width:600px)
+  {
+    .h-txt h1{
+      font-size: 1.5em;
+    }
+
+    .logo{
+      font-size: .5em;
+      display: grid;
+    }
+    .navbar a{
+      font-size: .6em;
+      display: inline;
+      padding: 0;
+    }
+
+    .footer{
+      padding: 30px 30px 30px 30px;
+      width: 80%;
+      position: fixed;
+      font-size: 1em;
+      right: 0;
+      bottom: 0;
+    }
+  }
